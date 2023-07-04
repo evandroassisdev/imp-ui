@@ -1,0 +1,3 @@
+{
+  "extends": "@imp-ui/eslint-config"
+}
