@@ -1,18 +1,25 @@
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
-  stories: ["../src/pages/**/*.mdx", "../src/stories/**/*.stories.tsx"],
+  stories: ['../src/pages/**/*.mdx', '../src/stories/**/*.stories.tsx'],
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    "@storybook/addon-a11y",
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    '@storybook/addon-a11y',
   ],
   framework: {
-    name: "@storybook/react-vite",
+    name: '@storybook/react-vite',
     options: {},
   },
   docs: {
-    autodocs: "tag",
+    autodocs: 'tag',
+  },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/imp-ui/';
+    }
+
+    return config;
   },
 };
 export default config;
