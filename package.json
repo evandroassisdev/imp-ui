@@ -6,9 +6,12 @@
  "scripts": {
   "dev": "turbo run dev --parallel",
   "build": "turbo run build",
-  "version-packages": "changeset version"
+  "changeset": "changeset",
+  "version-packages": "changeset version",
+  "release": "turbo run build --filter=imp-ui/docs && changeset publish"
  },
  "devDependencies": {
+  "@changesets/cli": "^2.26.2",
   "turbo": "^1.10.7"
  }
 }

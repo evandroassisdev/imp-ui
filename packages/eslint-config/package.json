@@ -1,5 +1,5 @@
 {
-  "name": "@imp-ui/eslint-config",
+  "name": "@imp-system/eslint-config",
   "license": "MIT",
   "private": true,
   "main": "index.js",

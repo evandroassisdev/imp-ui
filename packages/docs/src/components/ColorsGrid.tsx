@@ -1,4 +1,4 @@
-import { colors } from '@imp-ui/tokens'
+import { colors } from '@imp-system/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {
