@@ -21,7 +21,7 @@ jobs:
 
       - run: npm run build
         env:
-          TURBO_TOKEN: v3SadHzrCLLhjaMIp5Xya8Jf
+          TURBO_TOKEN: YlEzUWv34jMi9OcIgK0SlPji
           TURBO_TEAM: evandroassisdev
 
       - name: Deploy storybook
